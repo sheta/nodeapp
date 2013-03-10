@@ -1,0 +1,310 @@
+@font-face{
+font-family: 'League Gothic';
+src: url('leaguegothic-regular-webfont.eot'),
+    url('leaguegothic-regular-webfont.ttf'); /* IE9+ */
+}
+
+body{
+    background-color: #F3EFEE; 
+    font-family: "League Gothic"; 
+    font-weight:300;
+}
+
+#wrapper{
+   
+    width: 400px;
+    margin-left: 13%;
+    margin-top: 42%;
+}
+
+#logo{
+  
+    font-size:300px;
+    margin-bottom: 0;
+    color: #9D1309;
+
+}
+
+.left{
+    margin-left:85px;
+
+}
+
+#subhead{
+    font-size: 160px;
+    margin-top: -175px;
+    margin-left: 380px;
+    position:absolute;
+    width: 700px;
+    color: #807F7D;    
+}
+
+#arrow{
+    margin-top: -65px;
+    opacity:0.1;    
+}
+
+#loginhead{
+    font-size:130px;
+    margin-bottom: 0;
+    color: #9D1309;
+    margin-left: -18px;
+    
+}
+
+.login{
+   margin-top: 10px;
+   background-color: rgba(212,212,212,0.3);
+   margin-left: -24px;
+   padding: 35px;
+   width:350px;
+   height: 220px;  
+}
+
+.loginfield{
+    display: block;
+    border: none;
+    color: #333;
+    background: transparent;
+    border-bottom: 1px solid #807F7D;
+    padding: 5px 2px 0 2px;
+    font-family: "HelveticaNeue";
+    margin-bottom:0;
+    margin-top:10px;
+    margin-left:8px;
+    width:320px;
+    font-size: 28px;
+    
+}
+
+.loginfield:focus { 
+  outline: none;
+  border-color: #51CBEE;
+}
+
+.container{
+    margin-left: 20%; 
+    margin-top: 30%;
+}
+
+.loginbutton{
+    display: inline-block;
+    padding: 10px;
+    width: 75px;
+    height: 18px;
+    margin-left:10px;
+    background: #807F7D; 
+    margin-top: 16px;
+}
+
+.registerbutton{
+    display: inline-block;
+    padding: 10px;
+    width: 115px;
+    height: 18px;
+    margin-left:90px;
+    background: #807F7D; 
+    margin-top: 16px;
+}
+
+a{
+    text-decoration:none;
+    color: black;
+    font-size: 27px;
+    
+}
+
+
+.enter{
+    margin-top:-6px;
+    margin-left:15px;
+    color:  #F3EFEE; 
+}
+
+.navigation li{
+  display: inline-block;
+  color: rgba(0,0,0,0.6);
+}
+
+.navigation{
+    list-style-type: none;
+    padding-top: 12px;
+    font-size: 36px;
+    
+}
+
+.central{
+     padding-left: 78px;
+}
+
+header{
+  background-color: rgba(212,212,212,0.9);
+  margin-top: -36px;
+  height: 65px;
+  margin-left: -8px;
+  margin-right: -8px;
+  padding: 0;
+    
+}
+
+#selected{
+    color: rgba(157,19,9,0.8); 
+}
+
+.feedPost{
+    font-family: 'Helvetica';
+    background-color: rgba(212,212,212,0.3);
+    font-size: 25px;
+    padding-left: 28px;
+    padding-right: 28px;
+    margin-right:0px;
+    line-height: 1.3em;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    padding-top: 0.3px;
+}
+
+#newsfeed{
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-top: -40px;
+}
+
+#title{
+    padding-left: 35px;
+    padding-right: 35px;
+    font-size: 40px;
+    color: rgba(0,0,0,0.3); 
+    margin-top: 15px;
+    margin-bottom: 55px;
+}
+
+.postText{
+      color: rgba(0,0,0,0.67);
+      margin-bottom: 23px;
+      margin-top: 20px;
+}
+
+
+.supportButton{
+    display: inline-block;
+    padding: 10px;
+    width: 100px;
+    height: 18px;
+    margin-left:0px;
+    background: rgba(157,19,9,0.6);   
+}
+
+.commentButton{
+    display: inline-block;
+    padding: 10px;
+    width: 100px;
+    height: 18px;
+    margin-left:8px;
+    background: rgba(157,19,9,0.6);   
+}
+
+.buttonText{
+   font-size: 28px;
+   font-family: 'League Gothic';
+    margin-top: -5px;
+    padding-left: 13px;
+    color: rgba(0,0,0,0.7);
+    
+}
+
+.buttons{
+    padding-bottom: 0px;
+}
+
+.tags{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#fullPage{
+    padding-left:30px;
+    padding-right:30px;
+    margin-top: -20px;
+}
+
+.sub{
+    font-family: 'Helvetica';
+    margin-top: -50px;
+    font-size: 22px;
+}
+
+.styled{
+    border: 3px solid #cccccc;
+    background-color: rgba(255,255,255,0.7);
+    font-family: 'Helvetica';
+    font-size: 22px;
+}
+
+#tagTitle{
+    padding-right: 35px;
+    font-size: 40px;
+    color: rgba(0,0,0,0.3);
+    margin-top: 15px;
+    margin-bottom: 55px;
+}
+
+.submitButton{
+    display: inline-block;
+    padding: 10px;
+    width: 255px;
+    margin-top: 20px;
+    height: 28px;
+    margin-left:2px;
+    background: rgba(157,19,9,0.6); 
+}
+
+
+.postMe{
+    font-size: 36px;
+   font-family: 'League Gothic';
+    margin-top: -5px;
+    text-align: center;
+    color: rgba(0,0,0,0.7);
+}
+
+.quote{
+    font-family: 'helvetica';
+    font-size: 44px;
+    line-height: 1.3em;
+    margin-bottom: 0;
+}
+
+.tagsList{
+    font-size:20px;
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 10px;
+    font-family: 'helveticaneue';
+}
+.name{
+    font-size: 27px;
+    font-family: 'League Gothic';
+    display: inline-block;
+    margin-bottom: 2px;
+    color: #9D1309;
+}
+
+#displayQuote{
+    border-bottom: solid 1px rgba(0,0,0,0.3);
+    height: 300px;
+    margin-bottom: 24px;
+}
+
+#commentTitle{
+    font-size: 30px;
+    color: rgba(0,0,0,0.3); 
+}
+
+.commenter{
+    font-family: 'League Gothic';
+    font-size: 27px;
+    color: #9D1309;
+    display: inline-block;
+    margin-bottom: 5px;
+}
