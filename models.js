@@ -19,11 +19,10 @@ function defineModels(mongoose, fn) {
   /**
     * Model: Document
     */
-  Document = new Schema({
-    'title': { type: String, index: true },
+  Post = new Schema({
     'data': String,
     'tags': [String],
-    'keywords': [String],
+    'comments': [String],
     'user_id': ObjectId
   });
 
