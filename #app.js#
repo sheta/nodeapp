@@ -10,9 +10,10 @@ app.get('/', function(req, res) {
 });
 
 var Sequelize = require("sequelize");
-//var sequelize = new Sequelize('database', 'sheta');
+//var sequ
+elize = new Sequelize('database', 'sheta');
 
-var sequelize = new Sequelize('database', 'postgres', 'samcates0', {
+var sequelize = new Sequelize('database', 'user', 'password', {
   host: "localhost", //your server
   port: 5432 //server port
   dialect: 'postgres'
@@ -20,7 +21,7 @@ var sequelize = new Sequelize('database', 'postgres', 'samcates0', {
 
 
 var Post = sequelize.define('Posts', {
-	postID: Sequelize.INTEGER,
+	userID: Sequelize.INTEGER,
 	postText: Sequelize.TEXT,
 	date: Sequelize.TEXT,
 }
