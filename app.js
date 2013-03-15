@@ -1,3 +1,5 @@
+
+
 var express= require('express');
 var app = express();
 app.use("/public", express.static(__dirname + '/public'));
@@ -93,11 +95,13 @@ Tag.hasMany(Post);
 sequelize.sync();
 
 User.create({ userID: 1, userName: 'ravi', password: 'chinnu'}).success(function(task) {
+  console.log("inserted");
   // you can now access the newly created task via the variable task
 });
 // search for attributes
-User.find({ where: {userName: 'ravi'} }).success(function(project) {
+var ravi = User.findAll({ where: {userName: 'ravi'} }).success(function(project) {
+  console.log("hi");
   // project will be the first entry of the Projects table with the title 'aProject' || null
-})
+});
 app.listen(3000);
 console.log('Listening on port 3000');
