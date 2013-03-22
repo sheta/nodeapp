@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html>
     <head>
-       <title>Resilience</title>
-       <link rel="stylesheet" href="mainstyles.css"> 
-       <meta name="apple-mobile-web-app-capable" content="yes" />
-
-<meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-      
+		   <title>Resilience</title>
+			 <meta charset="utf-8">
+			<meta name="HandheldFriendly" content="True">
+			<meta rel="apple-touch-startup-image" href="startup.png">
+			<meta name="apple-mobile-web-app-capable" content="yes">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+			<meta name="apple-touch-icon-precomposed" sizes="114X114" href="startup.png">
+			<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+			<link rel="stylesheet" href="mainstyles.css">    
     </head>
     <body>
       <header>
             <nav>
-               <ul class = "navigation">
-                   <a href = "about.html"><li>ABOUT</li></a>
+                <ul class = "navigation">
+          		   <a href = "about.html"><li>ABOUT</li></a>
                    <a href= "newsfeed.html"><li class="central">NEWSFEED</li></a>
                    <a href = "video.html"><li class="central">VIDEOS</li></a>
                    <a href="donate.html"><li class="central">DONATE</li></a>
@@ -21,43 +24,31 @@
         </header>
         <section>
             <div id = "fullPage">
-                <div id = "displayQuote">
-                    <p class = "quote">
-                        <span class = "name">stanford_student:</span><br/>
-                        "After two failed midterms, I finally aced the final! It was a
-                        long struggle, but I learned a lot. I'm more than my grades." <br/>
-                    </p>
-                    <span class = "tagsList">#math51&nbsp; #stanfordstress</span>
-                </div>
-                  <h1 id = "commentTitle"> COMMENTS </h1>
-                <div class = "feedPost">
-                    <p class = "commentText">
-                       <span class = "commenter">cooldude</span><br/>I'm in that class too. Yay, I'm glad you made it through!
-                    </p>
-                </div>
-                <div class = "feedPost">
-                    <p class = "commentText">
-                        <span class = "commenter">enrique_allen</span><br/>I'm glad you learned a lot. It's all about 
-                        how you grow.
-                    </p>
-                </div>
-                <div class = "feedPost">
-                    <p class = "commentText">
-                        <span class = "commenter">stanford_student</span><br/> I am thinking of taking that class next
-                        year. What is it like?
-                    </p>
-                </div>
-                <!--<a class="commentButton" href="#" style="margin-left:-0.5px;"><p class="buttonText">COMMENT</p></a>-->
-            </div>
+            <div id="displayQuote">
+            	<p class="quote">
+            	<span class="name">stanford_student:</span>
+                    <div id="innerfield">                   
+                    </div> 
+                   <div id="commentfield">
+                   </div>
+                     </p>
+             </div>
+            </div>    
         </section>
+         <script type="text/javascript"src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+       <script src="rscript.js"></script>
+       
+       <script> 
+       var url = window.location.href;
+       var string = unescape(url).substring(url.indexOf('?')+1);
+       var replyfrom = string.substring(string.indexOf('#'), string.indexOf('@'));
+       var comments = string.substring(string.indexOf('@'));
+       var mainmessage = string.substring(0, string.indexOf('#'));
+      $("#innerfield").append('<span class="quote">'+mainmessage+'</span></br><span class="tagsList">'+replyfrom+'</span>');
+      $("#innerfield").append('<h1 id="commentTitle">COMMENTS</h1><div class="feedPost"><p class = "commentText">'+comments+'</p></div>');
+     
+      
+      
+        </script>
     </body>
-    <script>
-  var a=document.getElementsByTagName("a");
-  for(var i=0;i<a.length;i++){
-      a[i].onclick=function(){
-          window.location=this.getAttribute("href");
-          return false
-      }
-  }
-    </script>
 </html>

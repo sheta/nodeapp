@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Resilience</title>
+        <link rel="stylesheet" href="bigstyles.css"> 
+        <link rel="apple-touch-startup-image" href="splash.png">
+    </head>
+    <body>
+         <header>
+            <nav>
+                <ul class = "navigation">
+                   <a href = "about.html" ><li id="selected">ABOUT</li></a>
+                   <a href= "newsfeed.html"><li class="central">NEWSFEED</li></a>
+                   <a href = "video.html"><li class="central">VIDEOS</li></a>
+                   <a href="donate.html" ><li class="central">DONATE</li></a>
+                </ul>
+            </nav>
+        </header>
+    
+       <div id="wrapper" style="">
+            <h1 id = "loginhead">RESILIENCE</h1>
+            <p id = "descriptionIntro" style="line-height:1.5em;">Welcome to Resilience! We all have difficulties, trials, and tribulations.
+           Resilience allows people to talk about the times they triumphed and overcame these troubles, giving
+           us hope when we fall. It is meant for those who either overcame or are working to overcome a challenge
+           to discuss them. It is also for those who are currently working to make it through life's challenges
+           to discover that they are conquerable and how they are able to be overcome.</p>
+           
+           <a class="loginbutton" href="newsfeed.html" style="width:400px; height: 50px;"><p class="enter" style="padding-left: 65px;">GET STARTED NOW</p></a>
+       </div>
+    </body>
+    <script>
+      var a=document.getElementsByTagName("a");
+  for(var i=0;i<a.length;i++){
+      a[i].onclick=function(){
+          window.location=this.getAttribute("href");
+          return false
+      }
+  }
+  </script>
+</html>

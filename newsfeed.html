@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-
-<meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
-<link rel="apple-touch-startup-image" href="splash.png">
-
-        <title>Newsfeed-Resilience</title>
-        <link rel="stylesheet" href="mainstyles.css"> 
+    <title>Resilience</title>
+     <meta charset="utf-8">
+	<meta name="HandheldFriendly" content="True">
+	<meta rel="apple-touch-startup-image" href="startup.png">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="apple-touch-icon-precomposed" sizes="114X114" href="startup.png">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<link rel="stylesheet" href="bigstyles.css"> 
+        
     </head>
     <body>
         <header>
             <nav>
                 <ul class = "navigation">
                    <a href = "about.html"><li>ABOUT</li></a>
-                   <a href= "newsfeed.html"><li class="central" id="selected">NEWSFEED</li></a>
+                   <a href= "newsfeed.html"><li class="central">NEWSFEED</li></a>
                    <a href = "video.html"><li class="central">VIDEOS</li></a>
                    <a href="donate.html"><li class="central">DONATE</li></a>
                 </ul>
@@ -23,50 +25,12 @@
         </header>
         <section>
             <h1 id = "title"> MOST RECENT </h1>
-            <div id = "newsfeed">
-              <div class = "feedPost">
-                    <p class = "postText">
-                       After two failed midterms, I finally aced the final! It was a
-                        long struggle, but I learned a lot. I'm more than my grades. <br/>
-                        <span class = "tags">#math51 &nbsp; #learning &nbsp; #nomoremath</span> 
-                    </p>
-                      <div class = "buttons">
-                        <!--<a class="supportButton" href="#"><p class="buttonText">SUPPORT</p></a>-->
-                        <a class="commentButton" href="final.html"><p class="buttonText">VIEW</p></a>
-                    </div>
-                </div>
-                <div class = "feedPost">
-                    <p class = "postText">
-                        I got 72 rejections but Rolls-Royce ain't one. Job search is tiring and at times
-                        demoralizing. But when you finally hit it, it's worth it.<br/>
-                        <span class = "tags">#careers &nbsp; #gradplans</span>
-                    </p>
-                    <div class = "buttons">
-                        <!--<a class="supportButton" href="#"><p class="buttonText">SUPPORT</p></a>-->
-                        <a class="commentButton" href="#"><p class="buttonText">VIEW</p></a>
-                    </div>
-                </div>
-                 <div class = "feedPost">
-                    <p class = "postText">
-                        Coding all night long on the ray tracer. Seemed impossible. I still have a few bugs
-                        but I'm almost there! Graphics, I'm killing you, one ray at a time. <br/>
-                        <span class = "tags">#stanfordCS &nbsp; #cs148</span>
-                    </p>
-                     <div class = "buttons">
-                        <!--<a class="supportButton" href="#"><p class="buttonText">SUPPORT</p></a>-->
-                        <a class="commentButton" href="#"><p class="buttonText">VIEW</p></a>
-                    </div>
-                </div>
-            </div>
+		        <div id ="newsfeed">
+				
+		        </div>
         </section>
+        <script type="text/javascript"src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+        <script src="rscript.js"></script>
+
     </body>
-    <script>
-      var a=document.getElementsByTagName("a");
-  for(var i=0;i<a.length;i++){
-      a[i].onclick=function(){
-          window.location=this.getAttribute("href");
-          return false
-      }
-  }
-  </script>
 </html>
