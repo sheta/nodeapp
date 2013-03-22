@@ -16,7 +16,7 @@
             <nav>
                 <ul class = "navigation">
                    <a href = "about.html"><li>ABOUT</li></a>
-                   <a href= "newsfeed.html"><li class="central">NEWSFEED</li></a>
+                   <a href= "newsfeed.html"><li class="central" id="selected">NEWSFEED</li></a>
                    <a href = "video.html"><li class="central">VIDEOS</li></a>
                    <a href="donate.html"><li class="central">DONATE</li></a>
                 </ul>
@@ -30,6 +30,15 @@
         </section>
         <script type="text/javascript"src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
         <script src="rscript.js"></script>
+         <script>
+      var a=document.getElementsByTagName("a");
+  for(var i=0;i<a.length;i++){
+      a[i].onclick=function(){
+          window.location=this.getAttribute("href");
+          return false
+      }
+  }
+  </script>
 
     </body>
 </html>
