@@ -1,5 +1,5 @@
  $(document).ready(function(){
-  			   geturlKywd();
+  			   //geturlKywd();
                geturlrply(); 
  });
  			var tweets = "";
@@ -17,7 +17,7 @@
               		var texttweets = moretweets['text'];  
               		getText2[i] = texttweets;
 
-                	$('#newsfeed').append('<div class = "feedPost"><p class = "postText">' + texttweets + '</p><div class="buttons"><a class="commentButton"><p class="buttonText">VIEW</p></a></div></div><input type="button" id="tweet" value="VIEW"/>'); 	
+                	$('#newsfeed').append('<div class = "feedPost"><p class = "postText">' + texttweets + '</p></div><input class="postText" type="button" id="tweet" value="VIEW"/>'); 	
                	});           		
                     }); 
                }   
@@ -52,7 +52,7 @@
 										
 		
                		
-				$('#newsfeed').append('<div class = "feedPost"><p class ="postText">' + tweet.text + '</p><div class="buttons"><a class="commentButton"><p class="buttonText">VIEW</p></a></div></div><input type="button" id="'+i+'tweet" value="VIEW"/>');     			      
+				$('#newsfeed').append('<div class = "feedPost"><p class ="postText">' + tweet.text + '</p></div><input type="button" class="postText" id="'+i+'tweet" value="VIEW"/>');     			      
 		}else {"I am worried about my grades and if i will pass my classes" };
 				  
 				  $('#newsfeed > input').each(function(){
