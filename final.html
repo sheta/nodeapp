@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Resilience</title>
+       <link rel="stylesheet" href="mainstyles.css"> 
+       <meta name="apple-mobile-web-app-capable" content="yes" />
+
+<meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+      
+    </head>
+    <body>
+      <header>
+            <nav>
+               <ul class = "navigation">
+                   <a href = "about.html"><li>ABOUT</li></a>
+                   <a href= "newsfeed.html"><li class="central">NEWSFEED</li></a>
+                   <a href = "video.html"><li class="central">VIDEOS</li></a>
+                   <a href="donate.html"><li class="central">DONATE</li></a>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <div id = "fullPage">
+                <div id = "displayQuote">
+                    <p class = "quote">
+                        <span class = "name">stanford_student:</span><br/>
+                        "After two failed midterms, I finally aced the final! It was a
+                        long struggle, but I learned a lot. I'm more than my grades." <br/>
+                    </p>
+                    <span class = "tagsList">#math51&nbsp; #stanfordstress</span>
+                </div>
+                  <h1 id = "commentTitle"> COMMENTS </h1>
+                <div class = "feedPost">
+                    <p class = "commentText">
+                       <span class = "commenter">cooldude</span><br/>I'm in that class too. Yay, I'm glad you made it through!
+                    </p>
+                </div>
+                <div class = "feedPost">
+                    <p class = "commentText">
+                        <span class = "commenter">enrique_allen</span><br/>I'm glad you learned a lot. It's all about 
+                        how you grow.
+                    </p>
+                </div>
+                <div class = "feedPost">
+                    <p class = "commentText">
+                        <span class = "commenter">stanford_student</span><br/> I am thinking of taking that class next
+                        year. What is it like?
+                    </p>
+                </div>
+                <!--<a class="commentButton" href="#" style="margin-left:-0.5px;"><p class="buttonText">COMMENT</p></a>-->
+            </div>
+        </section>
+    </body>
+    <script>
+  var a=document.getElementsByTagName("a");
+  for(var i=0;i<a.length;i++){
+      a[i].onclick=function(){
+          window.location=this.getAttribute("href");
+          return false
+      }
+  }
+    </script>
+</html>
